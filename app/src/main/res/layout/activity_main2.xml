@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDD0"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/greeting4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you like my app?"
+        android:textColor="#F000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="652dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/greeting1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Macrons"
+            android:textColor="#F000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.398" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="203dp"
+            android:layout_height="152dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/macron"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/greeting3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Croissants"
+                android:textColor="#F000"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.17" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="172dp"
+                android:layout_height="154dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/croissant"
+                tools:layout_editor_absoluteY="97dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/greeting2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eclair"
+                android:textColor="#F000"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.616" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="183dp"
+                android:layout_height="169dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/eclair"
+                tools:layout_editor_absoluteY="437dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="171dp"
+        android:layout_height="78dp"
+        android:backgroundTint="#9C27B0"
+        android:text="Yes"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="187dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#9C27B0"
+        android:text="No"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
