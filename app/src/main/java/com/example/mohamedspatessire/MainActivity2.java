@@ -36,7 +36,7 @@ public class MainActivity2 extends AppCompatActivity {
         submit2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity2.this, "Fuck you", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity2.this, "Watch Your Back", Toast.LENGTH_SHORT).show();
             }
         });
     }
