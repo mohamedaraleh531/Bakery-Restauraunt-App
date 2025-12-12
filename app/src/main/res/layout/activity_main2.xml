@@ -1,146 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFDD0"
-    tools:context=".MainActivity2">
-
-
-    <TextView
-        android:id="@+id/greeting4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Do you like my app?"
-        android:textColor="#F000"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+    android:fillViewport="true">
 
     <LinearLayout
-        android:layout_width="407dp"
-        android:layout_height="652dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="24dp">
+
 
         <TextView
-            android:id="@+id/greeting1"
-            android:layout_width="wrap_content"
+            android:id="@+id/menuTitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Macrons"
-            android:textColor="#F000"
-            android:textSize="25dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.398" />
+            android:text="MENU"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:paddingBottom="24dp" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="203dp"
-            android:layout_height="152dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/macron"
-            tools:layout_editor_absoluteY="278dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="194dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/greeting3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Croissants"
-                android:textColor="#F000"
-                android:textSize="25dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.054"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.17" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="172dp"
-                android:layout_height="154dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/croissant"
-                tools:layout_editor_absoluteY="97dp" />
+                android:id="@+id/croissantImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/croissant"
+                android:adjustViewBounds="true" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/croissantName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Croissant"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/croissantCheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Cheese (+$1.00)"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/croissantChocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chocolate Filling (+$1.50)"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="192dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/greeting2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Eclair"
-                android:textColor="#F000"
-                android:textSize="25dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.045"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.616" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="183dp"
-                android:layout_height="169dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/eclair"
-                tools:layout_editor_absoluteY="437dp" />
+                android:id="@+id/cakeImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/cake"
+                android:adjustViewBounds="true" />
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/cakeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slice of Cake"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cakeStrawberries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Strawberries (+$1.00)"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/cakeWhipped"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Whipped Cream (+$0.75)"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/cookieImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/cookie"
+                android:adjustViewBounds="true" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/cookieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chocolate Chip Cookie"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cookieExtraChips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Chocolate Chips (+$0.50)"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/cookieWalnuts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Walnuts (+$0.75)"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:backgroundTint="#FF9800"
+            android:textSize="20sp"
+            android:paddingTop="16dp" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="171dp"
-        android:layout_height="78dp"
-        android:backgroundTint="#9C27B0"
-        android:text="Yes"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/submit2"
-        android:layout_width="187dp"
-        android:layout_height="75dp"
-        android:backgroundTint="#9C27B0"
-        android:text="No"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
