@@ -27,7 +27,7 @@
         android:id="@+id/greeting2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="410-404-0853"
+        android:text="123-456-7890"
         android:autoLink="phone"
         android:textColor="#F000"
         android:textSize="18dp"
